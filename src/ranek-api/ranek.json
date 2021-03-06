@@ -1,0 +1,44 @@
+{
+  "usuario": [
+    {
+      "id": "ale@hotmail.com",
+      "email": "ale@hotmail.com",
+      "nome": "Alexandre",
+      "senha": "123",
+      "rua": "Rua Ali Perto",
+      "cep": "12345678",
+      "numero": "25",
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro"
+    }
+  ],
+  "produto": [
+    {
+      "id": "notebook",
+      "nome": "Notebook",
+      "usuario_id": "ale@hotmail.com",
+      "preco": "4999",
+      "vendido": "false",
+      "descricao": "Esse é o novo notebook",
+      "fotos": null
+    },
+    {
+      "id": "smartphone",
+      "nome": "Smartphone",
+      "usuario_id": "ale@hotmail.com",
+      "preco": "1999",
+      "vendido": "false",
+      "descricao": "Esse é o novo smartphone",
+      "fotos": null
+    },
+    {
+      "id": "tablet",
+      "nome": "Tablet",
+      "usuario_id": "ale@hotmail.com",
+      "preco": "1399",
+      "vendido": "false",
+      "descricao": "Esse é o novo tablet",
+      "fotos": null
+    }
+  ]
+}
