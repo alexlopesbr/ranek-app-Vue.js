@@ -6,33 +6,42 @@
         :src="produto.fotos[0].src"
         :alt="produto.fotos[0].titulo"
       />
-      <h2 class="titulo">
-        {{ produto.nome }}
-      </h2>
-      <p class="preco">
-        {{ produto.preco }}
-      </p>
-      <p class="descricao">
-        {{ produto.descricao }}
-      </p>
+      <p class="preco">{{ produto.preco }}</p>
+      <h2 class="titulo">{{ produto.nome }}</h2>
+      <p>{{ produto.descricao }}</p>
     </div>
   </section>
 </template>
 
 <script>
-import { api } from "@/services.js"
+import { api } from "@/services.js";
+import { serialize } from "@/helpers.js";
 
 export default {
   data() {
     return {
-      produtos: null
+      produtos: null,
+      produtosPorPagina: 9
+    };
+  },
+  computed: {
+    url() {
+      const query = serialize(this.$route.query);
+      return `/produto?_limit=${this.produtosPorPagina}${query}`;
     }
   },
   methods: {
     getProdutos() {
-      api.get("/produto").then(r => this.produtos = r.data)
+      api.get(this.url).then(r => this.produtos = r.data)
     }
   },
+
+  watch: {
+    url() {
+      this.getProdutos()
+    }
+  },
+
   created() {
     this.getProdutos()
   }
