@@ -4,7 +4,7 @@
       <router-link to="/" class="logo">
         <img src="@/assets/ranek.svg" alt="Ranek" />
       </router-link>
-      <router-link to="/" class="btn"> Vender / Login </router-link>
+      <router-link to="/login" class="btn"> Vender / Login </router-link>
     </nav>
   </header>
 </template>
@@ -26,5 +26,9 @@ nav {
 
 .logo img {
   width: 90px;
+}
+
+a {
+  transition: all 0.2s;
 }
 </style>
