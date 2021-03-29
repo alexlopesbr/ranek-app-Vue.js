@@ -2,9 +2,11 @@
   <div id="app">
     <TheHeader />
     <main id="main">
-      <transition mode="out-in">
-        <router-view />
-      </transition>
+      <router-view v-slot="{ Component }">
+        <transition name="slide" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
     <TheFooter />
   </div>
@@ -82,7 +84,7 @@ img {
   flex: 1;
 }
 
-label{
+label {
   margin-bottom: 5px;
 }
 
@@ -107,7 +109,7 @@ textarea:focus {
   border-color: #87f;
 }
 
-.v-enter,
+/* .v-enter,
 .v-leave-to {
   opacity: 0;
 }
@@ -123,5 +125,16 @@ textarea:focus {
 .v-enter-active,
 .v-leave-active {
   transition: all 0.3s;
+} */
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateX(-30%);
 }
 </style>

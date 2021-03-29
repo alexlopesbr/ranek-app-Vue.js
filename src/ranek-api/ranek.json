@@ -3,13 +3,24 @@
     {
       "id": "ale@hotmail.com",
       "email": "ale@hotmail.com",
-      "nome": "Alexandre",
+      "nome": "Alexandre sobrenome",
       "senha": "123",
       "rua": "Rua Ali Perto",
       "cep": "12345678",
       "numero": "25",
       "estado": "RJ",
       "cidade": "Rio de Janeiro"
+    },
+    {
+      "id": "ale2@hotmail.com",
+      "email": "ale2@hotmail.com",
+      "nome": "Alexandre2 sobrenome",
+      "senha": "1232",
+      "rua": "Rua Ali Perto2",
+      "cep": "12345672",
+      "numero": "22",
+      "estado": "RJ2",
+      "cidade": "Rio de Janeiro2"
     }
   ],
   "produto": [
