@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 .loading span {
   display: inline-block;
   width: 10px;
