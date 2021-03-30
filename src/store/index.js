@@ -22,7 +22,7 @@ export default createStore({
     },
 
     UPDATE_USUARIO(state, payload){
-      state.usuario = payload
+      state.usuario = Object.assign({}, state.usuario, payload)
     }
   },
   

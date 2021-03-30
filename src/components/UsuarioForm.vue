@@ -3,7 +3,7 @@
     <label for="nome">Nome</label>
     <input type="text" id="nome" name="nome" v-model="nome" />
 
-    <label for="nome">Email</label>
+    <!-- <label for="nome">Email</label>
     <input type="email" id="email" name="email" v-model="email" />
 
     <label for="nome">Senha</label>
@@ -25,7 +25,7 @@
     <input type="text" id="cidade" name="cidade" v-model="cidade" />
 
     <label for="nome">Estado</label>
-    <input type="text" id="estado" name="estado" v-model="estado" />
+    <input type="text" id="estado" name="estado" v-model="estado" /> -->
     <div class="button">
       <slot> </slot>
     </div>
@@ -33,23 +33,34 @@
 </template>
 
 <script>
+import { mapFields } from "@/helpers.js"
 export default {
   name: 'UsuarioForm',
 
   data() {
     return {
-      nome: '',
-      email: '',
-      senha: '',
-      cep: '',
-      rua: '',
-      numero: '',
-      bairro: '',
-      cidade: '',
-      estado: '',
+      // nome: '',
+      // email: '',
+      // senha: '',
+      // cep: '',
+      // rua: '',
+      // numero: '',
+      // bairro: '',
+      // cidade: '',
+      // estado: ''
     }
+  },
+
+  computed: {
+    ...mapFields({
+      fields: ['nome', 'email', 'senha', 'cep', 'rua', 'numero', 'bairro', 'cidade', 'estado'],
+      base: 'usuario',
+      mutaion: 'UPDATE_USUARIO'
+    }),
+
   }
 }
+
 </script>
 
 <style scoped>
