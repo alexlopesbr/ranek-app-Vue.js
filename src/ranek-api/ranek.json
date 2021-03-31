@@ -4,23 +4,19 @@
       "id": "ale@hotmail.com",
       "email": "ale@hotmail.com",
       "nome": "Alexandre sobrenome",
-      "senha": "123",
-      "rua": "Rua Ali Perto",
-      "cep": "12345678",
-      "numero": "25",
-      "estado": "RJ",
-      "cidade": "Rio de Janeiro"
+      "senha": "123"
     },
     {
       "id": "ale2@hotmail.com",
       "email": "ale2@hotmail.com",
       "nome": "Alexandre2 sobrenome",
-      "senha": "1232",
-      "rua": "Rua Ali Perto2",
-      "cep": "12345672",
-      "numero": "22",
-      "estado": "RJ2",
-      "cidade": "Rio de Janeiro2"
+      "senha": "1232"
+    },
+    {
+      "id": "ale1@hotmail.com",
+      "nome": "ale",
+      "email": "ale1@hotmail.com",
+      "senha": "123"
     }
   ],
   "produto": [

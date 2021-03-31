@@ -1,12 +1,11 @@
-export function serialize (obj) {
-  let queryString = ""
-      for (let key in obj) {
-        queryString += `&${key}=${obj[key]}`
-      }
-      return queryString
+export function serialize(obj) {
+  let queryString = "";
+  for (let key in obj) {
+    queryString += `&${key}=${obj[key]}`;
+  }
+  return queryString;
 }
 
-// plugin para mutation do form
 export function mapFields(options) {
   const object = {};
   for (let x = 0; x < options.fields.length; x++) {

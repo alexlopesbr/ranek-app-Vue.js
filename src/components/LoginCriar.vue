@@ -3,7 +3,9 @@
   <transition name="slide" mode="out-in">
     <button v-if="!criar" @click="criar = true" class="btn">Criar conta</button>
     <UsuarioForm v-else>
-      <button class="btn btn-form">Criar Usuário</button>
+      <button class="btn btn-form" @click.prevent="criarUsuario">
+        Criar Usuário
+      </button>
     </UsuarioForm>
   </transition>
 </template>
@@ -20,6 +22,12 @@ export default {
   data() {
     return {
       criar: false
+    }
+  },
+
+  methods: {
+    criarUsuario() {
+      this.$store.dispatch('criarUsuario', this.$store.state.usuario)
     }
   }
 }
