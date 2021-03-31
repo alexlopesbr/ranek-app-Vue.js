@@ -8,7 +8,13 @@ export default createStore({
       id: "",
       nome: "",
       email: "",
-      senha: ""
+      senha: "",
+      cep: "",
+      rua: "",
+      numero: "",
+      bairro: "",
+      cidade: "",
+      estado: ""
     }
   },
   mutations: {
