@@ -29,6 +29,54 @@
       "bairro": "",
       "cidade": "",
       "estado": ""
+    },
+    {
+      "id": "maria123@gmail.com",
+      "nome": "maria",
+      "email": "maria123@gmail.com",
+      "senha": "123",
+      "cep": "25966111",
+      "rua": "Rua Ricardo Thimoteo da Silva",
+      "numero": "123",
+      "bairro": "Quebra Frascos",
+      "cidade": "Teresópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "joao@gmail.com",
+      "nome": "João123",
+      "email": "joao@gmail.com",
+      "senha": "123",
+      "cep": "25966111",
+      "rua": "Rua Ricardo Thimoteo da Silva",
+      "numero": "111",
+      "bairro": "Quebra Frascos",
+      "cidade": "Teresópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "teste@gmail.com",
+      "nome": "teste",
+      "email": "teste@gmail.com",
+      "senha": "123",
+      "cep": "25966111",
+      "rua": "Rua Ricardo Thimoteo da Silva",
+      "numero": "123",
+      "bairro": "Quebra Frascos",
+      "cidade": "Teresópolis",
+      "estado": "RJ"
+    },
+    {
+      "id": "1xvW1SP",
+      "nome": "tes",
+      "email": "",
+      "senha": "",
+      "cep": "",
+      "rua": "",
+      "numero": "",
+      "bairro": "",
+      "cidade": "",
+      "estado": ""
     }
   ],
   "produto": [
